@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased font-sans bg-white;
+  }
+
+  /* Select States TSK */
+}
+
+@layer components {
+}
+
+@layer utilities {
+}

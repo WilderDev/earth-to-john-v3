@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
-        serif: ['Lato', ...defaultTheme.fontFamily.serif],
+        sans: ['var(--font-josefin-sans)'],
+        serif: ['var(--font-lato)'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

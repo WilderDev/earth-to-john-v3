@@ -1,20 +1,21 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
+import '@/assets/styles/globals.css';
+import { PropsWithChildren } from 'react';
+import { JosefinSansFont, LatoFont } from '@/lib/theme/fonts';
+import cn from '@/lib/common/style.helpers';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+// * Layout
+export default function RootLayout({ children }: PropsWithChildren) {
+  // * Render
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(JosefinSansFont.variable, LatoFont.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
 
+// * Metadata
 export const metadata = {
   title: 'Earth to John',
   description: 'TSK',
