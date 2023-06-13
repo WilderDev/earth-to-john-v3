@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply antialiased font-sans bg-white;
+    @apply antialiased font-sans bg-stone-50 text-stone-900 min-h-screen;
   }
 
   /* Select States TSK */
