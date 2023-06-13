@@ -4,6 +4,7 @@ import { JosefinSansFont, LatoFont } from '@/lib/theme/fonts';
 import cn from '@/lib/common/style.helpers';
 import Navigation from '@/components/layout/Navigation';
 import { defaultMetadata } from '@/lib/meta/defaultMetadata';
+import Footer from '@/components/layout/Footer';
 
 // * Layout
 export default function RootLayout({ children }: PropsWithChildren) {
@@ -16,6 +17,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
 
         {/* Page */}
         {children}
+
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );

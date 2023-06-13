@@ -16,17 +16,20 @@ export default function LandingGalleryCTA() {
             <h2 className="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
               Check out the Gallery
             </h2>
+
             <p className="mt-6 text-xl leading-8 text-stone-600">
               My passion for creating art has been a part of my life since
               infancy, with cherished memories of drawing at my grandparents'
               house using a coffee can full of crayons.
             </p>
+
             <p className="mt-6 text-base leading-7 text-stone-600">
               My latest works serve as a testament to this passion, reflecting
               an expansive repertoire of artistic experiences. I warmly invite
               you to check out the gallery, where each new painting reveals a
               unique facet of my creative journey.
             </p>
+
             <div className="mt-10 flex">
               <Button size="lg" shadow="md" effect="scale" href="#">
                 View More Paintings <span aria-hidden="true">&rarr;</span>
