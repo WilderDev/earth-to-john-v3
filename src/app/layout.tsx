@@ -6,8 +6,14 @@ import Navigation from '@/components/layout/Navigation';
 import { defaultMetadata } from '@/lib/meta/defaultMetadata';
 import Footer from '@/components/layout/Footer';
 
+// * Props
+interface IProps {
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}
+
 // * Layout
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function RootLayout({ children, modal }: IProps) {
   // * Render
   return (
     <html lang="en">
@@ -17,6 +23,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
 
         {/* Page */}
         {children}
+
+        {/* Modal */}
+        {modal}
 
         {/* Footer */}
         <Footer />

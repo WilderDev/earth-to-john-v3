@@ -1,7 +1,11 @@
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
-import Captivating from '@/assets/images/paintings/Captivating.jpg';
+import FallMeditation from '@/assets/images/paintings/Fall_Meditation.jpg';
+import LilyLake from '@/assets/images/paintings/Lily_Lake.jpg';
+import MorningSwim from '@/assets/images/paintings/Morning_Swim.jpg';
+import RiderOnTheStorm from '@/assets/images/paintings/Rider_On_The_Storm.jpg';
+import SeptemberSunrise from '@/assets/images/paintings/September_Sunrise.jpg';
 
 // * Component
 export default function LandingGalleryCTA() {
@@ -43,10 +47,10 @@ export default function LandingGalleryCTA() {
             <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
               <Image
                 className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-stone-50 object-cover"
-                src={Captivating}
-                alt="Captivating"
+                src={FallMeditation}
+                alt="FallMeditation"
                 placeholder="blur"
-                blurDataURL={Captivating.src}
+                blurDataURL={FallMeditation.src}
               />
             </div>
 
@@ -55,10 +59,10 @@ export default function LandingGalleryCTA() {
               <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
                 <Image
                   className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-stone-50 object-cover"
-                  src={Captivating}
-                  alt="Captivating"
+                  src={LilyLake}
+                  alt="LilyLake"
                   placeholder="blur"
-                  blurDataURL={Captivating.src}
+                  blurDataURL={LilyLake.src}
                 />
               </div>
 
@@ -66,10 +70,10 @@ export default function LandingGalleryCTA() {
               <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                 <Image
                   className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-stone-50 object-cover"
-                  src={Captivating}
-                  alt="Captivating"
+                  src={RiderOnTheStorm}
+                  alt="RiderOnTheStorm"
                   placeholder="blur"
-                  blurDataURL={Captivating.src}
+                  blurDataURL={RiderOnTheStorm.src}
                 />
               </div>
 
@@ -77,10 +81,10 @@ export default function LandingGalleryCTA() {
               <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                 <Image
                   className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-stone-50 object-cover"
-                  src={Captivating}
-                  alt="Captivating"
+                  src={SeptemberSunrise}
+                  alt="SeptemberSunrise"
                   placeholder="blur"
-                  blurDataURL={Captivating.src}
+                  blurDataURL={SeptemberSunrise.src}
                 />
               </div>
             </div>

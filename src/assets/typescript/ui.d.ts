@@ -33,3 +33,11 @@ export interface ITestimonial {
     imageUrl: StaticImageData;
   };
 }
+
+export interface IGalleryImage {
+  name: string;
+  imageUrl: string;
+  width: number;
+  height: number;
+  isAvailable: boolean;
+}

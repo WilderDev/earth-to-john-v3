@@ -38,7 +38,7 @@ export default function Footer() {
             <div key={item.name} className="px-5 py-2">
               <a
                 href={item.href}
-                className="text-base text-stone-500 hover:text-stone-900"
+                className="text-base text-stone-700 hover:text-stone-900 font-sans"
               >
                 {item.name}
               </a>
@@ -67,9 +67,8 @@ export default function Footer() {
             className="flex items-center text-stone-400 hover:text-stone-500"
           >
             <CursorArrowRippleIcon className="h-6 w-6" aria-hidden="true" />
-            <span className="text-light pt-1 pl-1 text-sm">
-              Fine Art America
-            </span>
+
+            <span className="text-light pl-1 text-sm">Fine Art America</span>
           </a>
         </div>
 

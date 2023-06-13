@@ -9,5 +9,7 @@ interface IProps {
 // * Component
 export default function Container({ children, className }: IProps) {
   // * Render
-  return <div className={cn('container mx-auto', className)}>{children}</div>;
+  return (
+    <div className={cn('container mx-auto px-4', className)}>{children}</div>
+  );
 }
