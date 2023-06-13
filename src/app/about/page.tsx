@@ -3,13 +3,19 @@ import Main from '@/components/layout/Main';
 import Title from '@/components/layout/Title';
 
 // * Page
-export default function LandingPage() {
+export default function AboutPage() {
   // * Render
   return (
     <Main>
       <Container>
-        <Title>Home</Title>
+        <Title>About</Title>
       </Container>
     </Main>
   );
 }
+
+// * Metadata
+export const metadata = {
+  title: 'About',
+  description: 'TSK',
+};

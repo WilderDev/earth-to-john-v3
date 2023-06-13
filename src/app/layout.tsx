@@ -3,6 +3,7 @@ import { PropsWithChildren } from 'react';
 import { JosefinSansFont, LatoFont } from '@/lib/theme/fonts';
 import cn from '@/lib/common/style.helpers';
 import Navigation from '@/components/layout/Navigation';
+import { defaultMetadata } from '@/lib/meta/defaultMetadata';
 
 // * Layout
 export default function RootLayout({ children }: PropsWithChildren) {
@@ -21,7 +22,4 @@ export default function RootLayout({ children }: PropsWithChildren) {
 }
 
 // * Metadata
-export const metadata = {
-  title: 'Earth to John',
-  description: 'TSK',
-};
+export const metadata = defaultMetadata;
