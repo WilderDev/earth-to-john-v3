@@ -3,6 +3,7 @@
 import { useCallback, useRef, useEffect, PropsWithChildren } from 'react';
 import { useRouter } from 'next/navigation';
 
+// * Component
 export default function Modal({ children }: PropsWithChildren) {
   // * Hooks
   const router = useRouter();
@@ -29,7 +30,7 @@ export default function Modal({ children }: PropsWithChildren) {
 
   // Close the modal when pressing the escape key
   const onKeyDown = useCallback(
-    (e: React.KeyboardEvent<HTMLDivElement>) => {
+    (e: KeyboardEvent) => {
       if (e.key === 'Escape') onDismiss();
     },
     [onDismiss],
@@ -38,16 +39,12 @@ export default function Modal({ children }: PropsWithChildren) {
   // * Effects
   // Add event listeners for the escape key and outside clicks
   useEffect(() => {
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onDismiss();
-    };
-
     document.addEventListener('keydown', onKeyDown);
 
     return () => {
       document.removeEventListener('keydown', onKeyDown);
     };
-  }, [onDismiss]);
+  }, [onDismiss, onKeyDown]);
 
   // * Render
   return (
@@ -58,7 +55,7 @@ export default function Modal({ children }: PropsWithChildren) {
     >
       <div
         ref={wrapper}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-6"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-10/12 md:w-8/12 lg:w-1/2 p-6 bg-white rounded-lg shadow-lg"
       >
         {children}
       </div>

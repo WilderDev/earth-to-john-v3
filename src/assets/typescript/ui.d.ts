@@ -36,8 +36,8 @@ export interface ITestimonial {
 
 export interface IGalleryImage {
   name: string;
+  description: string;
   imageUrl: string;
-  width: number;
-  height: number;
   isAvailable: boolean;
+  dimensions: string;
 }

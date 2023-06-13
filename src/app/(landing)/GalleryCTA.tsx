@@ -3,8 +3,7 @@ import Image from 'next/image';
 
 import FallMeditation from '@/assets/images/paintings/Fall_Meditation.jpg';
 import LilyLake from '@/assets/images/paintings/Lily_Lake.jpg';
-import MorningSwim from '@/assets/images/paintings/Morning_Swim.jpg';
-import RiderOnTheStorm from '@/assets/images/paintings/Rider_On_The_Storm.jpg';
+import RiderOnTheStorm from '@/assets/images/paintings/Rider_on_the_Storm.jpg';
 import SeptemberSunrise from '@/assets/images/paintings/September_Sunrise.jpg';
 
 // * Component

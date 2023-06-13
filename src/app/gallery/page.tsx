@@ -4,49 +4,11 @@ import Main from '@/components/layout/Main';
 import Title from '@/components/layout/Title';
 import GalleryImage from './GalleryImage';
 
-// * Data
-const images: IGalleryImage[] = [
-  {
-    name: 'Captivating',
-    imageUrl: '/Captivating.jpg',
-    width: 4942,
-    height: 7447,
-    isAvailable: true,
-  },
-  {
-    name: 'Chrysalis',
-    imageUrl: '/Chrysalis.jpg',
-    width: 7047,
-    height: 5223,
-    isAvailable: true,
-  },
-  {
-    name: 'Coneflower Ballet',
-    imageUrl: '/Coneflower_Ballet.jpg',
-    width: 5469,
-    height: 6729,
-    isAvailable: false,
-  },
-  {
-    name: 'Connection in Blue',
-    imageUrl: '/Connection_in_Blue.jpg',
-    width: 4667,
-    height: 7886,
-    isAvailable: true,
-  },
-  {
-    name: 'Dancing Light',
-    imageUrl: '/Dancing_Light.jpg',
-    width: 4342,
-    height: 4420,
-    isAvailable: false,
-  },
-];
-
-// CLOUDFLARE_BUCKET_URL;
-
 // * Page
-export default function GalleryPage() {
+export default async function GalleryPage() {
+  // * Data
+  const images = await getGalleryImages();
+
   // * State
   // Split the array into three
   const midIndex = Math.ceil(images.length / 3);
@@ -98,6 +60,54 @@ export default function GalleryPage() {
       </Container>
     </Main>
   );
+}
+
+// * Fetcher
+export async function getGalleryImages() {
+  const images: IGalleryImage[] = [
+    {
+      name: 'Captivating',
+      description: 'tsk',
+      imageUrl:
+        'https://res.cloudinary.com/dl54erra0/image/upload/v1670937838/cld-sample-5.jpg',
+      isAvailable: true,
+      dimensions: '36x48',
+    },
+    {
+      name: 'Chrysalis',
+      description: 'tsk',
+      imageUrl:
+        'https://res.cloudinary.com/dl54erra0/image/upload/v1670937837/cld-sample-4.jpg',
+      isAvailable: true,
+      dimensions: '36x48',
+    },
+    {
+      name: 'Coneflower Ballet',
+      description: 'tsk',
+      imageUrl:
+        'https://res.cloudinary.com/dl54erra0/image/upload/v1670937837/cld-sample-3.jpg',
+      isAvailable: false,
+      dimensions: '36x48',
+    },
+    {
+      name: 'Connection in Blue',
+      description: 'tsk',
+      imageUrl:
+        'https://res.cloudinary.com/dl54erra0/image/upload/v1670937827/samples/landscapes/landscape-panorama.jpg',
+      isAvailable: true,
+      dimensions: '36x48',
+    },
+    {
+      name: 'Dancing Light',
+      description: 'tsk',
+      imageUrl:
+        'https://res.cloudinary.com/dl54erra0/image/upload/v1670937824/samples/food/spices.jpg',
+      isAvailable: false,
+      dimensions: '36x48',
+    },
+  ];
+
+  return images;
 }
 
 // * Metadata
