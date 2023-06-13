@@ -16,7 +16,7 @@ const images = [
 export const defaultMetadata: Metadata = {
   title: {
     template: `%s | ${title}`,
-    default: title,
+    default: `Home | ${title}`,
   },
   description,
   applicationName: title,
