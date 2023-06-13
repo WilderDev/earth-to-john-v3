@@ -6,7 +6,7 @@ import Button from '@/components/ui/Button';
 export default function LandingHero() {
   // * Render
   return (
-    <section id="hero" className="relative isolate">
+    <section id="hero" className="relative isolate z-20 lg:pb-20">
       {/* Background */}
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -26,7 +26,7 @@ export default function LandingHero() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             {/* Title */}
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl font-sans">
               Authentic & Original{' '}
               <span className="text-green-900 block mt-2">Oil Paintings</span>
             </h1>
@@ -66,12 +66,18 @@ export default function LandingHero() {
               className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24 w-full sm:w-[48%]"
               src={Captivating}
               alt="Captivating"
+              placeholder="blur"
+              priority={true}
+              blurDataURL={Captivating.src}
             />
 
             <Image
               className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24 hidden sm:block sm:w-[48%]"
               src={Captivating}
               alt="Captivating"
+              placeholder="blur"
+              priority={true}
+              blurDataURL={Captivating.src}
             />
           </div>
         </div>

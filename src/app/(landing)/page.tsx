@@ -1,7 +1,7 @@
-import Container from '@/components/layout/Container';
 import Main from '@/components/layout/Main';
-import Title from '@/components/layout/Title';
 import LandingHero from './Hero';
+import LandingArtShows from './ArtShows';
+import LandingGalleryCTA from './GalleryCTA';
 
 // * Page
 export default function LandingPage() {
@@ -9,6 +9,10 @@ export default function LandingPage() {
   return (
     <Main>
       <LandingHero />
+
+      <LandingArtShows />
+
+      <LandingGalleryCTA />
     </Main>
   );
 }

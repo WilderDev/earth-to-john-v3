@@ -23,13 +23,16 @@ const navigationItems: INavItem[] = [
 export default function Navigation() {
   // * Render
   return (
-    <nav className="z-30 py-3 sm:py-5 w-full shadow-md">
+    <nav className="z-30 relative py-3 sm:py-5 w-full shadow-md bg-white/50">
       <Container>
         {/* List */}
         <ul className="flex items-center justify-around flex-wrap sm:flex-nowrap sm:justify-normal sm:space-x-8">
           {/* Logo Text */}
-          <li className="sm:mr-auto w-full text-center sm:w-auto sm:text-left mb-2 sm:mb-0">
-            <Link className="group font-medium sm:text-xl md:text-2xl" href="/">
+          <li className="sm:mr-auto w-full text-center mt-1 sm:mt-0 sm:w-auto sm:text-left mb-2 sm:mb-0">
+            <Link
+              className="group font-sans font-medium sm:text-xl md:text-2xl"
+              href="/"
+            >
               <span className="text-green-700 group-focus:text-green-600 group-hover:text-green-600 transition-colors duration-300">
                 Earth
               </span>{' '}

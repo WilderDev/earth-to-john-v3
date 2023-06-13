@@ -7,3 +7,4 @@
 5. Global Modal
 6. Global 404 (not-found)
 7. Database
+8. Lighthouse
