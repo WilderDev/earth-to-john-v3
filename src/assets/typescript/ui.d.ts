@@ -42,8 +42,9 @@ export interface IGalleryImage {
   imageUrl: string;
   original: {
     price: string;
-    sellDate: string | null;
-    owner: string | null;
+    purchaseDate: string | null;
+    purchaseLocation: string | null;
+    purchaseBy: string | null;
   };
   print: {
     isAvailable: boolean;

@@ -33,18 +33,19 @@ export async function getPaintingsFromDB() {
       medium: row[1],
       dimensions: row[2],
       description: row[3],
-      imageUrl: row[4],
+      imageUrl: row[4] === '' ? '/static/images/Captivating.jpg' : row[4],
       original: {
         price: row[5],
-        sellDate: row[6] || null,
-        owner: row[7] || null,
+        purchaseDate: row[6] || null,
+        purchaseLocation: row[7] || null,
+        purchaseBy: row[8] || null,
       },
       print: {
-        isAvailable: Boolean(row[8]),
+        isAvailable: Boolean(row[9]),
       },
-      awards: row[9] || null,
-      tags: row[10] || [],
-      createdAt: row[11],
+      awards: row[10] || null,
+      tags: row[11] || [],
+      createdAt: row[12],
     }));
 
     return transformedRows;

@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import Captivating from '@/assets/images/paintings/Captivating.jpg';
 import Button from '@/components/ui/Button';
+import Captivating from '@/assets/images/paintings/Captivating.jpg';
+import DreamWithUs from '@/assets/images/paintings/Dream_With_Us.jpg';
 
 // * Component
 export default function LandingHero() {
@@ -65,7 +66,7 @@ export default function LandingHero() {
             <Image
               className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24 w-full sm:w-[48%]"
               src={Captivating}
-              alt="Captivating"
+              alt="Captivating Oil Painting by John Carman"
               placeholder="blur"
               priority={true}
               blurDataURL={Captivating.src}
@@ -73,11 +74,11 @@ export default function LandingHero() {
 
             <Image
               className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24 hidden sm:block sm:w-[48%]"
-              src={Captivating}
-              alt="Captivating"
+              src={DreamWithUs}
+              alt="Dream With Us Oil Painting by John Carman"
               placeholder="blur"
               priority={true}
-              blurDataURL={Captivating.src}
+              blurDataURL={DreamWithUs.src}
             />
           </div>
         </div>

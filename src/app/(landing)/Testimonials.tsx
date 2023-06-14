@@ -1,8 +1,11 @@
 import { IFeaturedTestimonial, ITestimonial } from '@/assets/typescript/ui';
 import cn from '@/lib/common/style.helpers';
-
-import Captivating from '@/assets/images/paintings/Captivating.jpg';
 import Image from 'next/image';
+
+import RosiesButterfly from '@/assets/images/paintings/Rosies_Butterfly.jpg';
+import SleepingUnderTheTrees from '@/assets/images/paintings/Sleeping_Under_the_Trees.jpg';
+import LilysDragonfly from '@/assets/images/paintings/Lilys_Dragonfly.jpg';
+import Captivating from '@/assets/images/paintings/Captivating.jpg';
 
 // * Data
 const featuredTestimonial: IFeaturedTestimonial = {
@@ -10,8 +13,8 @@ const featuredTestimonial: IFeaturedTestimonial = {
     'We are grateful to have three John Carman originals. Our home is carefully and lovingly curated with art, photos and plants that bring us joy and peace every day. Every piece John creates is an organic masterpiece full of depth, texture and whimsical inspiration from nature',
   author: {
     name: 'Kevin & Caroline Rogers',
-    painting: 'TSK Painting Name',
-    imageUrl: Captivating,
+    painting: 'Lily‘s Dragonfly | Sonoma Sunrise',
+    imageUrl: LilysDragonfly,
   },
 };
 
@@ -23,7 +26,7 @@ const testimonials: ITestimonial[][][] = [
           'After seeing John‘s artwork, my husband and I asked John to create a custom painting. He created a piece of artwork that was very personal as well as beautiful - he captured exactly what we were hoping for. He even scribed a special message on the back - this is something we will treasure for the rest of our lives. I love John‘s artwork and have purchased prints of some of his other pieces. His work is unique and beautiful and we have received many compliments on our painting',
         author: {
           name: 'Jan Held',
-          painting: 'TSK Painting Name',
+          painting: 'TSK',
           imageUrl: Captivating,
         },
       },
@@ -35,7 +38,7 @@ const testimonials: ITestimonial[][][] = [
           'John‘s artwork brings the harmony and beauty of the natural world into our home. He is a wonderful artist, he captures the world with each brush stroke. We feel fortunate to own both original and reproduction pieces of his artwork, and we love them all. When we recently moved, it didn‘t feel like home until we hung up John‘s paintings.',
         author: {
           name: 'Jenny & Jeff Pozen',
-          painting: 'TSK Painting Names',
+          painting: 'TSK',
           imageUrl: Captivating,
         },
       },
@@ -50,8 +53,8 @@ const testimonials: ITestimonial[][][] = [
           'His paintings bring peace and beauty to our lives. We receive overwhelmingly positive comments and compliments on his artwork from guests visiting our home. Having his artwork adorning our walls really makes our home feel like a home.',
         author: {
           name: 'Sara Rix',
-          painting: 'TSK Painting Name',
-          imageUrl: Captivating,
+          painting: 'Mouse Hunter | Freedom',
+          imageUrl: RosiesButterfly,
         },
       },
       // More testimonials...
@@ -62,15 +65,15 @@ const testimonials: ITestimonial[][][] = [
           'We absolutely love John Carman‘s work. We have several pieces throughout our house. The colors and detail are amazing! A gifted artist for sure. I love seeing all of his new pieces as well. I‘m looking forward to my next purchase of his work.',
         author: {
           name: 'Judi & Terry Huels',
-          painting: 'TSK Painting Name',
-          imageUrl: Captivating,
+          painting: 'Sleeping Under the Trees | Sacred Space | Bull Valley',
+          imageUrl: SleepingUnderTheTrees,
         },
       },
       {
         message: 'Love his work! I need another one. Just love them!',
         author: {
           name: 'Lisa O‘Malley',
-          painting: 'TSK Painting Name',
+          painting: 'TSK',
           imageUrl: Captivating,
         },
       },
@@ -150,7 +153,7 @@ export default function LandingTestimonials() {
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-stone-600">
+                <div className="text-stone-600 text-xs mt-1">
                   {featuredTestimonial.author.painting}
                 </div>
               </div>
@@ -203,7 +206,7 @@ export default function LandingTestimonials() {
                             {testimonial.author.name}
                           </div>
 
-                          <div className="text-stone-600">
+                          <div className="text-stone-600 text-xs mt-1">
                             {testimonial.author.painting}
                           </div>
                         </div>

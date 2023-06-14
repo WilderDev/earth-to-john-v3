@@ -5,6 +5,7 @@ import { baseUrl } from '@/lib/common/site.helpers';
 import cn from '@/lib/common/style.helpers';
 import sluggify from '@/lib/common/url.helpers';
 import { getPaintingBySlug } from '@/lib/database/getPaintingBySlug';
+import Image from 'next/image';
 
 // * Params
 interface IParams {
@@ -23,20 +24,30 @@ export default async function GalleryItemInterceptionModal({
   return (
     <Modal>
       {/* Body */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-y-0 w-full">
+      <div className="flex flex-col lg:flex-row gap-6 lg:gap-y-0 w-full min-h-[250px] lg:min-h-0">
         {/* Image */}
-        <CloudImage
-          className="w-full md:w-1/2 h-auto"
-          src={painting.imageUrl}
-          alt={painting.title}
-        />
+        {painting.imageUrl.startsWith('/static/images') ? (
+          <Image
+            className="ring-2 mx-auto lg:mx-0 ring-offset-2 ring-transparent opacity-95 group-hover:shadow-xl group-hover:opacity-100 group-focus:shadow-xl group-focus:opacity-100 transition-all duration-200 ease-in-out group-hover:ring-green-500 group-focus:ring-green-500"
+            src={painting.imageUrl}
+            alt={painting.title}
+            width={500}
+            height={500}
+          />
+        ) : (
+          <CloudImage
+            className="w-full lg:w-1/2 h-full lg:my-auto"
+            src={painting.imageUrl}
+            alt={painting.title}
+          />
+        )}
 
         {/* Details */}
-        <div className="flex flex-col w-full md:w-1/2 md:min-h-full justify-between relative">
+        <div className="flex flex-col w-full lg:w-1/2 lg:min-h-full justify-between relative">
           {/* Top */}
-          <div>
+          <div className="lg:mt-6">
             {/* Name */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+            <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold">
               {painting.title}
             </h1>
 
@@ -49,7 +60,7 @@ export default async function GalleryItemInterceptionModal({
 
           {/* Inquire (CTA) */}
           <Button
-            className="block self-end place-self-end justify-self-end mt-auto"
+            className="mt-6"
             href={baseUrl + `/contact?painting=${sluggify(painting.title)}`}
             shadow="lg"
           >
@@ -59,7 +70,7 @@ export default async function GalleryItemInterceptionModal({
           {/* Availability */}
           <div
             className={cn(
-              'absolute top-0 right-0 -m-4 text-xs font-bold text-white px-3.5 py-1.5 rounded-full',
+              'absolute top-0 right-0 -m-2 lg:-m-4 text-xs font-bold text-white px-3.5 py-1.5 rounded-full',
               painting.print.isAvailable
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600'
                 : 'bg-gradient-to-r from-blue-600 to-sky-600',

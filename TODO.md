@@ -7,4 +7,6 @@
 5. Global 404 (not-found)
 6. Lighthouse
 7. Static Generation
-8. Ability for Parents to upload to Cloudinary
+8. Change Home image to ...
+9. Transfer Domains
+10. Add Vercel Analytics

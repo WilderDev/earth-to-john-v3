@@ -24,6 +24,7 @@ export default function Button({
   shadow = 'sm',
   effect = 'none',
   href,
+  className = '',
   children,
   ...props
 }: IProps) {
@@ -102,7 +103,7 @@ export default function Button({
   };
 
   // * Classes
-  const defaultClasses = `${defaultStyles} ${sizeStyles[size]} ${variantStyles[variant][fill]} ${roundedStyles[rounded]} ${shadowStyles[shadow]} ${effectStyles[effect]}`;
+  const defaultClasses = `${defaultStyles} ${sizeStyles[size]} ${variantStyles[variant][fill]} ${roundedStyles[rounded]} ${shadowStyles[shadow]} ${effectStyles[effect]} ${className}`;
 
   // * Render
   return href ? (

@@ -55,7 +55,7 @@ export default function Modal({ children }: PropsWithChildren) {
     >
       <div
         ref={wrapper}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-10/12 md:w-8/12 lg:w-1/2 p-6 bg-white rounded-lg shadow-lg"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-10/12 md:w-8/12 lg:w-1/2 p-6 bg-white rounded-lg shadow-lg"
       >
         {children}
       </div>
