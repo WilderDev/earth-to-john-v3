@@ -10,7 +10,7 @@ export const JosefinSansFont = Josefin_Sans({
 export const LatoFont = Lato({
   variable: '--font-lato',
   subsets: ['latin'],
-  weight: ['400', '700'], // TSK
+  weight: ['400', '700'],
   preload: true,
   display: 'swap',
 });

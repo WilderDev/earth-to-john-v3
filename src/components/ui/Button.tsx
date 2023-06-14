@@ -26,6 +26,8 @@ export default function Button({
   href,
   className = '',
   children,
+  icon,
+  loading,
   ...props
 }: IProps) {
   // * Styles
@@ -114,16 +116,16 @@ export default function Button({
         target="_blank"
         rel="noopener noreferrer"
       >
-        {children}
+        {children} {icon && icon}
       </a>
     ) : (
       <Link className={defaultClasses} href={href}>
-        {children}
+        {children} {icon && icon}
       </Link>
     )
   ) : (
     <button className={defaultClasses} {...props}>
-      {children}
+      {children} {icon && icon}
     </button>
   );
 }

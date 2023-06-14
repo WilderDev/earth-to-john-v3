@@ -92,5 +92,3 @@ export const metadata = {
   description:
     'Contact John Carman via email or phone to discuss his paintings or purchasing artwork.',
 };
-
-// TSK: Pull in query params and update subject if exists

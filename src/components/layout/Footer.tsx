@@ -81,5 +81,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-// TSK: 2023 Events

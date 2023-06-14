@@ -17,5 +17,6 @@ export default function AboutPage() {
 // * Metadata
 export const metadata = {
   title: 'About',
-  description: 'TSK',
+  description:
+    'Learn about John Carman as an artists, and what he enjoys outside of creating beautiful nature-themed large oil paintings.',
 };

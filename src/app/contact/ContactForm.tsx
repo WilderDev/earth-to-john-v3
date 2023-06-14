@@ -1,12 +1,15 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import capitalize from '@/lib/common/text.helpers';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 // * Component
 export default function ContactForm() {
   // * Hooks
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const painting = searchParams.get('painting');
 
   // * State
   const [name, setName] = useState('');
@@ -44,6 +47,14 @@ export default function ContactForm() {
       );
     }
   };
+
+  // * Effects
+  // Add painting to subject if it exists
+  useEffect(() => {
+    if (painting) {
+      setSubject(`Inquiry about ${capitalize(painting.split('-').join(' '))}`);
+    }
+  }, [painting]);
 
   // * Render
   return (

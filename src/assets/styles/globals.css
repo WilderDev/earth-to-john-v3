@@ -4,14 +4,34 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
 
   body {
     @apply antialiased font-serif bg-stone-50 text-stone-900 min-h-screen;
   }
 
-  /* Select States TSK */
+  /* Select States */
+  ::selection {
+    @apply bg-green-500 text-green-50;
+  }
+
+  ::-moz-selection {
+    @apply bg-green-500 text-green-50;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-stone-50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-stone-300 rounded-md hocus:bg-green-400 transition-colors duration-200 ease-in-out;
+  }
 }
 
 @layer components {

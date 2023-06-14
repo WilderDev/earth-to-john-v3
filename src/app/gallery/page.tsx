@@ -33,5 +33,6 @@ export default async function GalleryPage() {
 // * Metadata
 export const metadata = {
   title: 'Gallery',
-  description: 'TSK',
+  description:
+    "View John Carman's oil paintings. Available for purchase. Contact John today.",
 };

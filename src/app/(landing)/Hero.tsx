@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import Captivating from '@/assets/images/paintings/Captivating.jpg';
 import DreamWithUs from '@/assets/images/paintings/Dream_With_Us.jpg';
+import { PaintBrushIcon } from '@heroicons/react/24/solid';
 
 // * Component
 export default function LandingHero() {
@@ -42,7 +43,7 @@ export default function LandingHero() {
               <Button
                 size="xl"
                 effect="scale"
-                //  icon TSK
+                icon={<PaintBrushIcon className="w-4 h-4" />}
                 href="/gallery"
               >
                 View Gallery
