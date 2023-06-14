@@ -1,0 +1,27 @@
+{
+  "short_name": "Earth to John",
+  "name": "Earth to John | Premium Large Oil Paintings by John Carman",
+  "icons": [
+    {
+      "src": "/static/favicon/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicon/maskable_icon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "background_color": "#fafaf9",
+  "display": "standalone",
+  "theme_color": "#16a34a",
+  "scope": ".",
+  "description": "Premium Large Oil Paintings by John Carman - Featured in top art galleries across the United States."
+}

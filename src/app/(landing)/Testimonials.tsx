@@ -8,7 +8,7 @@ const featuredTestimonial: IFeaturedTestimonial = {
     'We are grateful to have three John Carman originals. Our home is carefully and lovingly curated with art, photos and plants that bring us joy and peace every day. Every piece John creates is an organic masterpiece full of depth, texture and whimsical inspiration from nature',
   author: {
     name: 'Kevin & Caroline Rogers',
-    painting: 'Lily‘s Dragonfly | Sonoma Sunrise',
+    painting: 'Lily‘s Dragonfly | 3+',
     imageUrl:
       'https://res.cloudinary.com/dl54erra0/image/upload/v1686746059/Lilys_Dragonfly_bjeygn.jpg',
   },
@@ -22,7 +22,7 @@ const testimonials: ITestimonial[][][] = [
           'After seeing John‘s artwork, my husband and I asked John to create a custom painting. He created a piece of artwork that was very personal as well as beautiful - he captured exactly what we were hoping for. He even scribed a special message on the back - this is something we will treasure for the rest of our lives. I love John‘s artwork and have purchased prints of some of his other pieces. His work is unique and beautiful and we have received many compliments on our painting',
         author: {
           name: 'Jan Held',
-          painting: 'TSK',
+          painting: 'Custom Commisioned Paintings',
           imageUrl:
             'https://res.cloudinary.com/dl54erra0/image/upload/v1686752078/Soaking_In_Blue_-_JPG_ermvcg.jpg',
         },
@@ -35,9 +35,9 @@ const testimonials: ITestimonial[][][] = [
           'John‘s artwork brings the harmony and beauty of the natural world into our home. He is a wonderful artist, he captures the world with each brush stroke. We feel fortunate to own both original and reproduction pieces of his artwork, and we love them all. When we recently moved, it didn‘t feel like home until we hung up John‘s paintings.',
         author: {
           name: 'Jenny & Jeff Pozen',
-          painting: 'TSK',
+          painting: 'Sonoma Sunrise | Yesterday',
           imageUrl:
-            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752118/Orange_Renaissance_an29jl.jpg',
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686746071/Sonoma_Sunrise_jqulfd.jpg',
         },
       },
 
@@ -66,16 +66,16 @@ const testimonials: ITestimonial[][][] = [
           name: 'Judi & Terry Huels',
           painting: 'Sleeping Under the Trees | Sacred Space | Bull Valley',
           imageUrl:
-            'https://res.cloudinary.com/dl54erra0/image/upload/v1686746045/Sleeping_Under_the_Trees_ehjk39.jpg',
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752616/Sacred_Space_blqsrz.jpg',
         },
       },
       {
         message: 'Love his work! I need another one. Just love them!',
         author: {
           name: 'Lisa O‘Malley',
-          painting: 'TSK',
+          painting: 'Green Day | Moonlight Meadow',
           imageUrl:
-            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752625/Wake_Up_Call_scmrwq.jpg',
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686746045/Sleeping_Under_the_Trees_ehjk39.jpg',
         },
       },
       // More testimonials...

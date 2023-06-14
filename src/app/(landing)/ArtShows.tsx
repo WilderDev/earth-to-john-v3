@@ -10,7 +10,6 @@ import GoldCoastArtFairGrantPark from '@/assets/images/shows/gold-coast-art-fair
 import ArtFairBurrRidge from '@/assets/images/shows/burr-ridge-art-fair.jpeg';
 import FestivalOfArtGlencoe from '@/assets/images/shows/glencoe-festival-of-art.jpeg';
 import ArtAtTheGlenGlenview from '@/assets/images/shows/art-at-the-glen.jpeg';
-import ArtFairWilmette from '@/assets/images/shows/wilmette-art-fair.jpeg';
 import ArtAndBigForkFestivalEvanston from '@/assets/images/shows/art-and-big-fork-festival.jpeg';
 import PortClintonArtFestivalHighlandPark from '@/assets/images/shows/port-clinton-art-festival.jpeg';
 
@@ -183,7 +182,14 @@ export default function LandingArtShows() {
 
           <p className="mt-6 text-lg leading-8 text-stone-600">
             John&apos;s work will be featured in the following 14 art shows this
-            year. If you&apos;re in the area, stop by and say hello!
+            year. If you&apos;re in the area, stop by and say hello!{' '}
+            <a
+              className="text-green-600 hover:text-green-700 underline inline-flex items-center"
+              href="/static/events/john-carman-art-shows-2023.jpeg"
+              target="_blank"
+            >
+              View Full Calendar <span aria-hidden="true">&rarr;</span>
+            </a>
           </p>
         </div>
         <ul
@@ -229,6 +235,3 @@ export default function LandingArtShows() {
     </section>
   );
 }
-
-// TSK: View Full Calendar (Printout)
-// TSK: Add future shows when they are ready

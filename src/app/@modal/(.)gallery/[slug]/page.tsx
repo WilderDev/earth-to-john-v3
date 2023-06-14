@@ -5,7 +5,7 @@ import { baseUrl } from '@/lib/common/site.helpers';
 import cn from '@/lib/common/style.helpers';
 import sluggify from '@/lib/common/url.helpers';
 import { getPaintingBySlug } from '@/lib/database/getPaintingBySlug';
-import Image from 'next/image';
+import HeaderLink from './HeaderLink';
 
 // * Params
 interface IParams {
@@ -26,30 +26,18 @@ export default async function GalleryItemInterceptionModal({
       {/* Body */}
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-y-0 w-full min-h-[250px] lg:min-h-0">
         {/* Image */}
-        {painting.imageUrl.startsWith('/static/images') ? (
-          <Image
-            className="ring-2 mx-auto lg:mx-0 ring-offset-2 ring-transparent opacity-95 group-hover:shadow-xl group-hover:opacity-100 group-focus:shadow-xl group-focus:opacity-100 transition-all duration-200 ease-in-out group-hover:ring-green-500 group-focus:ring-green-500"
-            src={painting.imageUrl}
-            alt={painting.title}
-            width={500}
-            height={500}
-          />
-        ) : (
-          <CloudImage
-            className="w-full lg:w-1/2 h-full lg:my-auto"
-            src={painting.imageUrl}
-            alt={painting.title}
-          />
-        )}
+        <CloudImage
+          className="w-full lg:w-1/2 h-full lg:my-auto"
+          src={painting.imageUrl}
+          alt={painting.title}
+        />
 
         {/* Details */}
         <div className="flex flex-col w-full lg:w-1/2 lg:min-h-full justify-between relative">
           {/* Top */}
           <div className="lg:mt-6">
             {/* Name */}
-            <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold">
-              {painting.title}
-            </h1>
+            <HeaderLink name={painting.title} />
 
             {/* Description */}
             <p className="text-stone-600 italic mt-2">{painting.description}</p>

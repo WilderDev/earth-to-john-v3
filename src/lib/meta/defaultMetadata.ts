@@ -6,10 +6,10 @@ const description =
   'Premium Large Oil Paintings by John Carman - Featured in top art galleries across the United States.';
 const images = [
   {
-    url: 'tsk',
-    alt: 'tsk',
-    width: 0,
-    height: 0,
+    url: '/static/images/Captivating.jpg',
+    alt: 'Captivating',
+    width: 4942,
+    height: 7447,
   },
 ];
 
@@ -22,8 +22,10 @@ export const defaultMetadata: Metadata = {
   applicationName: title,
   creator: 'John Carman',
   colorScheme: 'only light',
-  assets: baseUrl + '/static',
   themeColor: '#fafaf9',
+  metadataBase: new URL(baseUrl),
+  assets: '/static',
+  manifest: '/manifest.json',
   keywords: [
     'John Carman',
     'John Carman Art',
@@ -40,13 +42,47 @@ export const defaultMetadata: Metadata = {
     'Premium Oil Paintings',
     'Premium Oil Paintings for Sale',
   ],
-  // bookmarks
-  // manifest
-  // metadataBase: new URL(baseUrl)
-  // openGraph
-  // twitter
-  // icons
-  // robots
+  bookmarks: [
+    baseUrl + '/',
+    baseUrl + '/about',
+    baseUrl + '/contact',
+    baseUrl + '/gallery',
+  ],
+  openGraph: {
+    type: 'website',
+    siteName: 'Earth to John',
+    title,
+    description,
+    url: baseUrl,
+    images,
+    locale: 'en_US',
+    countryName: 'United States',
+    emails: ['carman.john@icloud.com'],
+    ttl: 60 * 60 * 24 * 7, // 1 week
+  },
+  icons: {
+    icon: [
+      { url: '/static/favicon/maskable_icon.png' },
+      new URL('/static/favicon/maskable_icon.png', baseUrl).toString(),
+    ],
+    apple: [
+      {
+        url: '/static/favicon/apple-touch-icon.png',
+        sizes: '180x180',
+        type: 'image/png',
+      },
+    ],
+  },
+  robots: {
+    follow: true,
+    index: true,
+    nocache: false,
+    noimageindex: false,
+    nosnippet: false,
+    notranslate: false,
+    noarchive: false,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+    'max-video-preview': -1,
+  },
 };
-
-// TSK: https://github.com/WilderDev/learnly-primary-app/blob/main/src/lib/meta/defaultMetadata.ts
