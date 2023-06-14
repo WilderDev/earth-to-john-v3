@@ -1,8 +1,6 @@
-import Image from 'next/image';
 import Button from '@/components/ui/Button';
-import Captivating from '@/assets/images/paintings/Captivating.jpg';
-import DreamWithUs from '@/assets/images/paintings/Dream_With_Us.jpg';
 import { PaintBrushIcon } from '@heroicons/react/24/solid';
+import CloudImage from '@/components/ui/CloudImage';
 
 // * Component
 export default function LandingHero() {
@@ -64,22 +62,24 @@ export default function LandingHero() {
 
           {/* Images */}
           <div className="flex flex-col sm:flex-row justify-between gap-x-10 mt-6 sm:mt-0">
-            <Image
+            <CloudImage
               className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24 w-full sm:w-[48%]"
-              src={Captivating}
+              src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746025/Captivating_tj5lgv.jpg"
               alt="Captivating Oil Painting by John Carman"
-              placeholder="blur"
               priority={true}
-              blurDataURL={Captivating.src}
+              width={4942}
+              height={7447}
+              quality="100"
             />
 
-            <Image
+            <CloudImage
               className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24 hidden sm:block sm:w-[48%]"
-              src={DreamWithUs}
+              src="https://res.cloudinary.com/dl54erra0/image/upload/v1686751726/Dream_With_Us_-_JPG_spvcpd.jpg"
               alt="Dream With Us Oil Painting by John Carman"
-              placeholder="blur"
               priority={true}
-              blurDataURL={DreamWithUs.src}
+              width={4954}
+              height={7430}
+              quality="100"
             />
           </div>
         </div>

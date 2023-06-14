@@ -22,6 +22,7 @@ export default function GalleryImage({ title, imageUrl }: IProps) {
           priority={true}
           width={500}
           height={500}
+          quality={100}
         />
       ) : (
         <CloudImage
@@ -29,6 +30,7 @@ export default function GalleryImage({ title, imageUrl }: IProps) {
           src={imageUrl}
           alt={title}
           priority={true}
+          quality="100"
         />
       )}
 

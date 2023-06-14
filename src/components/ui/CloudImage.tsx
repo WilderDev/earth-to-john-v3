@@ -11,6 +11,7 @@ interface IProps {
   height?: number;
   priority?: boolean;
   className?: string;
+  [key: string]: any;
 }
 
 // * Component
@@ -21,6 +22,7 @@ export default function CloudImage({
   height = 500,
   priority = false,
   className,
+  ...props
 }: IProps) {
   // * Render
   return (
@@ -32,6 +34,7 @@ export default function CloudImage({
       width={width}
       height={height}
       priority={priority}
+      {...props}
     />
   );
 }

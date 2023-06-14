@@ -1,10 +1,5 @@
 import Button from '@/components/ui/Button';
-import Image from 'next/image';
-
-import FallMeditation from '@/assets/images/paintings/Fall_Meditation.jpg';
-import LilyLake from '@/assets/images/paintings/Lily_Lake.jpg';
-import RiderOnTheStorm from '@/assets/images/paintings/Rider_on_the_Storm.jpg';
-import SeptemberSunrise from '@/assets/images/paintings/September_Sunrise.jpg';
+import CloudImage from '@/components/ui/CloudImage';
 
 // * Component
 export default function LandingGalleryCTA() {
@@ -44,46 +39,50 @@ export default function LandingGalleryCTA() {
           <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
             {/* Image 1 */}
             <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-              <Image
+              <CloudImage
                 className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-stone-50 object-cover"
-                src={FallMeditation}
-                alt="FallMeditation"
-                placeholder="blur"
-                blurDataURL={FallMeditation.src}
+                src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746024/Fall_Meditation_qrcw0m.jpg"
+                alt="Fall Meditation Oil Painting by John Carman"
+                width={7494}
+                height={4912}
+                quality="100"
               />
             </div>
 
             <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
               {/* Image 2 */}
               <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                <Image
+                <CloudImage
                   className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-stone-50 object-cover"
-                  src={LilyLake}
-                  alt="LilyLake"
-                  placeholder="blur"
-                  blurDataURL={LilyLake.src}
+                  src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746062/Lily_Lake_jslebx.jpg"
+                  alt="Lily Lake Oil Painting by John Carman"
+                  width={6077}
+                  height={6057}
+                  quality="100"
                 />
               </div>
 
               {/* Image 3 */}
               <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                <Image
+                <CloudImage
                   className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-stone-50 object-cover"
-                  src={RiderOnTheStorm}
-                  alt="RiderOnTheStorm"
-                  placeholder="blur"
-                  blurDataURL={RiderOnTheStorm.src}
+                  src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746042/Rider_on_the_Storm_ma3z3s.jpg"
+                  alt="Rider On The Storm Oil Painting by John Carman"
+                  width={3902}
+                  height={2587}
+                  quality="100"
                 />
               </div>
 
               {/* Image 4 */}
               <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                <Image
+                <CloudImage
                   className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-stone-50 object-cover"
-                  src={SeptemberSunrise}
-                  alt="SeptemberSunrise"
-                  placeholder="blur"
-                  blurDataURL={SeptemberSunrise.src}
+                  src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746044/September_Sunrise_vyffzp.jpg"
+                  alt="September Sunrise Oil Painting by John Carman"
+                  width={3295}
+                  height={2457}
+                  quality="100"
                 />
               </div>
             </div>

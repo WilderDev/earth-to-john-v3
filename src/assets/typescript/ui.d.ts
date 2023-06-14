@@ -20,7 +20,7 @@ export interface IFeaturedTestimonial {
   author: {
     name: string;
     painting: string;
-    imageUrl: StaticImageData;
+    imageUrl: string;
     // logoUrl: string;
   };
 }
@@ -30,7 +30,7 @@ export interface ITestimonial {
   author: {
     name: string;
     painting: string;
-    imageUrl: StaticImageData;
+    imageUrl: string;
   };
 }
 

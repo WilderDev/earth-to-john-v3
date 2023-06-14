@@ -1,11 +1,6 @@
 import { IFeaturedTestimonial, ITestimonial } from '@/assets/typescript/ui';
+import CloudImage from '@/components/ui/CloudImage';
 import cn from '@/lib/common/style.helpers';
-import Image from 'next/image';
-
-import RosiesButterfly from '@/assets/images/paintings/Rosies_Butterfly.jpg';
-import SleepingUnderTheTrees from '@/assets/images/paintings/Sleeping_Under_the_Trees.jpg';
-import LilysDragonfly from '@/assets/images/paintings/Lilys_Dragonfly.jpg';
-import Captivating from '@/assets/images/paintings/Captivating.jpg';
 
 // * Data
 const featuredTestimonial: IFeaturedTestimonial = {
@@ -14,7 +9,8 @@ const featuredTestimonial: IFeaturedTestimonial = {
   author: {
     name: 'Kevin & Caroline Rogers',
     painting: 'Lily‘s Dragonfly | Sonoma Sunrise',
-    imageUrl: LilysDragonfly,
+    imageUrl:
+      'https://res.cloudinary.com/dl54erra0/image/upload/v1686746059/Lilys_Dragonfly_bjeygn.jpg',
   },
 };
 
@@ -27,7 +23,8 @@ const testimonials: ITestimonial[][][] = [
         author: {
           name: 'Jan Held',
           painting: 'TSK',
-          imageUrl: Captivating,
+          imageUrl:
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752078/Soaking_In_Blue_-_JPG_ermvcg.jpg',
         },
       },
       // More testimonials...
@@ -39,7 +36,8 @@ const testimonials: ITestimonial[][][] = [
         author: {
           name: 'Jenny & Jeff Pozen',
           painting: 'TSK',
-          imageUrl: Captivating,
+          imageUrl:
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752118/Orange_Renaissance_an29jl.jpg',
         },
       },
 
@@ -54,7 +52,8 @@ const testimonials: ITestimonial[][][] = [
         author: {
           name: 'Sara Rix',
           painting: 'Mouse Hunter | Freedom',
-          imageUrl: RosiesButterfly,
+          imageUrl:
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752266/Mouse_Hunter_-_JPG_h9kjyg.jpg',
         },
       },
       // More testimonials...
@@ -66,7 +65,8 @@ const testimonials: ITestimonial[][][] = [
         author: {
           name: 'Judi & Terry Huels',
           painting: 'Sleeping Under the Trees | Sacred Space | Bull Valley',
-          imageUrl: SleepingUnderTheTrees,
+          imageUrl:
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686746045/Sleeping_Under_the_Trees_ehjk39.jpg',
         },
       },
       {
@@ -74,7 +74,8 @@ const testimonials: ITestimonial[][][] = [
         author: {
           name: 'Lisa O‘Malley',
           painting: 'TSK',
-          imageUrl: Captivating,
+          imageUrl:
+            'https://res.cloudinary.com/dl54erra0/image/upload/v1686752625/Wake_Up_Call_scmrwq.jpg',
         },
       },
       // More testimonials...
@@ -142,10 +143,11 @@ export default function LandingTestimonials() {
             {/* Author */}
             <figcaption className="flex items-center gap-x-4 border-t border-stone-900/10 px-6 py-4">
               {/* Author Image */}
-              <Image
+              <CloudImage
                 className="h-10 w-10 flex-none rounded-full bg-stone-50"
                 src={featuredTestimonial.author.imageUrl}
                 alt={featuredTestimonial.author.painting}
+                crop="thumb"
               />
 
               {/* Author Info */}
@@ -195,10 +197,11 @@ export default function LandingTestimonials() {
                       </blockquote>
 
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <Image
+                        <CloudImage
                           className="h-10 w-10 rounded-full bg-stone-50"
                           src={testimonial.author.imageUrl}
                           alt={testimonial.author.painting}
+                          crop="thumb"
                         />
 
                         <div>

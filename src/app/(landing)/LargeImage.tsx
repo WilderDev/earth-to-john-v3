@@ -1,17 +1,16 @@
-import Image from 'next/image';
-
-import GreenEnvy from '@/assets/images/paintings/Green_Envy.webp';
+import CloudImage from '@/components/ui/CloudImage';
 
 // * Component
 export default function LandingLargeImage() {
   // * Render
   return (
     <section id="image" className="mt-6 block w-screen">
-      <Image
+      <CloudImage
         className="w-screen h-screen object-cover"
-        src={GreenEnvy}
-        alt="Green Envy by John Carman"
-        quality={100}
+        src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746027/Green_Envy_as3pwe.webp"
+        alt="Green Envy Oil Painting by John Carman"
+        width={3840}
+        height={2560}
       />
     </section>
   );
