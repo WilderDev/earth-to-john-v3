@@ -5,6 +5,7 @@ import CloudImage from '@/components/ui/CloudImage';
 import { baseUrl } from '@/lib/common/site.helpers';
 import cn from '@/lib/common/style.helpers';
 import sluggify from '@/lib/common/url.helpers';
+import { getPaintingsFromDB } from '@/lib/database/db';
 import { getAllPaintings } from '@/lib/database/getAllPaintings';
 import { getPaintingBySlug } from '@/lib/database/getPaintingBySlug';
 
@@ -84,7 +85,7 @@ export default async function PaintingDetailsPage({
 
 // * Static Paths
 export async function generateStaticParams() {
-  const paintings = await getAllPaintings();
+  const paintings = await getPaintingsFromDB();
 
   return paintings.map(({ title }) => ({
     slug: sluggify(title),

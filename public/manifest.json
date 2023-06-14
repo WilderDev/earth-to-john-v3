@@ -23,5 +23,6 @@
   "display": "standalone",
   "theme_color": "#16a34a",
   "scope": ".",
+  "start_url": "/",
   "description": "Premium Large Oil Paintings by John Carman - Featured in top art galleries across the United States."
 }
