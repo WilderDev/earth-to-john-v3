@@ -33,7 +33,7 @@ export default function LandingHero() {
 
             {/* Subtitle */}
             <p className="mt-3 sm:mt-6 text-lg sm:text-2xl lg:text-3xl leading-8 text-stone-600">
-              by John "Obi" Carman
+              by John &ldquo;Obi&rdquo; Carman
             </p>
 
             {/* CTA */}

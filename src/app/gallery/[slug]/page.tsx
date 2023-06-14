@@ -1,9 +1,7 @@
 import Container from '@/components/layout/Container';
 import Main from '@/components/layout/Main';
 import Title from '@/components/layout/Title';
-import { getGalleryImages } from '../page';
-import sluggify from '@/lib/common/url.helpers';
-import { IGalleryImage } from '@/assets/typescript/ui';
+import { getPaintingBySlug } from '@/lib/database/getPaintingBySlug';
 
 // * Params
 interface IParams {
@@ -17,24 +15,14 @@ export default async function PaintingDetailsPage({
   params: { slug },
 }: IParams) {
   // * Data
-  const painting = (await getPaintingBySlug(slug)) as IGalleryImage;
+  const painting = await getPaintingBySlug(slug);
 
   // * Render
   return (
     <Main>
       <Container>
-        <Title>{painting.name}</Title>
+        <Title>{painting.title}</Title>
       </Container>
     </Main>
   );
-}
-
-// * Fetcher
-export async function getPaintingBySlug(slug: string) {
-  const allImages = await getGalleryImages();
-
-  const selectedImage: IGalleryImage | null =
-    allImages.find((img) => sluggify(img.name) === slug) ?? null;
-
-  return selectedImage;
 }

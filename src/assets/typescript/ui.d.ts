@@ -35,9 +35,20 @@ export interface ITestimonial {
 }
 
 export interface IGalleryImage {
-  name: string;
+  title: string;
+  medium: string;
+  dimensions: string;
   description: string;
   imageUrl: string;
-  isAvailable: boolean;
-  dimensions: string;
+  original: {
+    price: string;
+    sellDate: string | null;
+    owner: string | null;
+  };
+  print: {
+    isAvailable: boolean;
+  };
+  awards: string | null;
+  tags: string[];
+  createdAt?: string;
 }

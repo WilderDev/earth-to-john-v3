@@ -22,8 +22,8 @@ export default function LandingGalleryCTA() {
 
             <p className="mt-6 text-xl leading-8 text-stone-600">
               My passion for creating art has been a part of my life since
-              infancy, with cherished memories of drawing at my grandparents'
-              house using a coffee can full of crayons.
+              infancy, with cherished memories of drawing at my
+              grandparents&apos; house using a coffee can full of crayons.
             </p>
 
             <p className="mt-6 text-base leading-7 text-stone-600">

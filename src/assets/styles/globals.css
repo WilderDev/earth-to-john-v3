@@ -15,6 +15,22 @@
 }
 
 @layer components {
+  .painting-grid {
+    column-count: 1;
+    column-gap: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .painting-grid {
+      column-count: 2;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .painting-grid {
+      column-count: 3;
+    }
+  }
 }
 
 @layer utilities {

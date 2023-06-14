@@ -4,7 +4,7 @@
 2. Global Error
 3. Global Loading
 4. Global Toast
-5. Global Modal
-6. Global 404 (not-found)
-7. Database
-8. Lighthouse
+5. Global 404 (not-found)
+6. Lighthouse
+7. Static Generation
+8. Ability for Parents to upload to Cloudinary

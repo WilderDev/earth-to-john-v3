@@ -123,7 +123,7 @@ export default function LandingTestimonials() {
             Endorsements
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
-            Here&apos;s what others are saying about John's Artwork
+            Here&apos;s what others are saying about John&apos;s Artwork
           </p>
         </div>
 

@@ -4,24 +4,24 @@ import Link from 'next/link';
 
 // * Props
 interface IProps {
-  name: string;
+  title: string;
   imageUrl: string;
 }
 
 // * Component
-export default function GalleryImage({ name, imageUrl }: IProps) {
+export default function GalleryImage({ title, imageUrl }: IProps) {
   // * Render
   return (
-    <Link className="block group" href={`/gallery/${sluggify(name)}`}>
+    <Link className="block group" href={`/gallery/${sluggify(title)}`}>
       <CloudImage
-        className="ring-2 ring-offset-2 ring-transparent opacity-95 group-hover:shadow-xl group-hover:opacity-100 group-focus:shadow-xl group-focus:opacity-100 transition-all duration-200 ease-in-out group-hover:ring-green-500 group-focus:ring-green-500"
+        className="ring-2 mx-auto md:mx-0 ring-offset-2 ring-transparent opacity-95 group-hover:shadow-xl group-hover:opacity-100 group-focus:shadow-xl group-focus:opacity-100 transition-all duration-200 ease-in-out group-hover:ring-green-500 group-focus:ring-green-500"
         src={imageUrl}
-        alt={name}
+        alt={title}
         priority={true}
       />
 
       <p className="mt-2 text-sm font-medium text-center text-stone-600">
-        {name}
+        {title}
       </p>
     </Link>
   );
