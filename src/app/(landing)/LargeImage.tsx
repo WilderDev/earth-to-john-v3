@@ -9,8 +9,8 @@ export default function LandingLargeImage() {
         className="w-screen h-screen object-cover"
         src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746027/Green_Envy_as3pwe.webp"
         alt="Green Envy Oil Painting by John Carman"
-        width={3840}
-        height={2560}
+        width={1920}
+        height={1280}
       />
     </section>
   );

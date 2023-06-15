@@ -67,8 +67,8 @@ export default function LandingHero() {
               src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746025/Captivating_tj5lgv.jpg"
               alt="Captivating Oil Painting by John Carman"
               priority={true}
-              width={4942}
-              height={7447}
+              width={1236}
+              height={1862}
               quality="100"
             />
 
@@ -77,8 +77,8 @@ export default function LandingHero() {
               src="https://res.cloudinary.com/dl54erra0/image/upload/v1686751726/Dream_With_Us_-_JPG_spvcpd.jpg"
               alt="Dream With Us Oil Painting by John Carman"
               priority={true}
-              width={4954}
-              height={7430}
+              width={1239}
+              height={1858}
               quality="100"
             />
           </div>

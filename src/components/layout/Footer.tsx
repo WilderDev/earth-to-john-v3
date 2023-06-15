@@ -64,7 +64,7 @@ export default function Footer() {
             href="https://fineartamerica.com/profiles/John-Carman/shop"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-stone-400 hover:text-stone-500"
+            className="flex items-center text-stone-500 hover:text-stone-600"
           >
             <CursorArrowRippleIcon className="h-6 w-6" aria-hidden="true" />
 

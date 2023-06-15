@@ -148,6 +148,8 @@ export default function LandingTestimonials() {
                 src={featuredTestimonial.author.imageUrl}
                 alt={featuredTestimonial.author.painting}
                 crop="thumb"
+                width={80}
+                height={80}
               />
 
               {/* Author Info */}
@@ -202,6 +204,8 @@ export default function LandingTestimonials() {
                           src={testimonial.author.imageUrl}
                           alt={testimonial.author.painting}
                           crop="thumb"
+                          width={80}
+                          height={80}
                         />
 
                         <div>

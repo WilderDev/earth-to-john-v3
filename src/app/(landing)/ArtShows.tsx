@@ -184,7 +184,7 @@ export default function LandingArtShows() {
             John&apos;s work will be featured in the following 14 art shows this
             year. If you&apos;re in the area, stop by and say hello!{' '}
             <a
-              className="text-green-600 hover:text-green-700 underline inline-flex items-center"
+              className="text-green-700 hocus:text-green-800 underline inline-flex items-center"
               href="/static/events/john-carman-art-shows-2023.jpeg"
               target="_blank"
             >

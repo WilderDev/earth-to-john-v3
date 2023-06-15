@@ -43,9 +43,8 @@ export default function LandingGalleryCTA() {
                 className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-stone-50 object-cover"
                 src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746024/Fall_Meditation_qrcw0m.jpg"
                 alt="Fall Meditation Oil Painting by John Carman"
-                width={7494}
-                height={4912}
-                quality="100"
+                width={1874}
+                height={1228}
               />
             </div>
 
@@ -56,9 +55,8 @@ export default function LandingGalleryCTA() {
                   className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-stone-50 object-cover"
                   src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746062/Lily_Lake_jslebx.jpg"
                   alt="Lily Lake Oil Painting by John Carman"
-                  width={6077}
-                  height={6057}
-                  quality="100"
+                  width={1520}
+                  height={1515}
                 />
               </div>
 
@@ -68,9 +66,8 @@ export default function LandingGalleryCTA() {
                   className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-stone-50 object-cover"
                   src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746042/Rider_on_the_Storm_ma3z3s.jpg"
                   alt="Rider On The Storm Oil Painting by John Carman"
-                  width={3902}
-                  height={2587}
-                  quality="100"
+                  width={976}
+                  height={647}
                 />
               </div>
 
@@ -80,9 +77,8 @@ export default function LandingGalleryCTA() {
                   className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-stone-50 object-cover"
                   src="https://res.cloudinary.com/dl54erra0/image/upload/v1686746044/September_Sunrise_vyffzp.jpg"
                   alt="September Sunrise Oil Painting by John Carman"
-                  width={3295}
-                  height={2457}
-                  quality="100"
+                  width={824}
+                  height={615}
                 />
               </div>
             </div>

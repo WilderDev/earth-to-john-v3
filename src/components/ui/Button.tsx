@@ -47,7 +47,7 @@ export default function Button({
   // Variant styles
   const variantStyles = {
     primary: {
-      solid: 'bg-green-600 text-stone-50 hocus:bg-green-700',
+      solid: 'bg-green-700 text-stone-50 hocus:bg-green-800',
       outline:
         'bg-stone-50 text-green-600 border border-green-600 hocus:bg-green-50 hocus:text-green-700',
       ghost:
