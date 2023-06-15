@@ -19,9 +19,9 @@ export default async function GalleryPage() {
 
         {/* Paintings Grid */}
         <div className="painting-grid space-y-6">
-          {paintings?.map(({ title, imageUrl }) => (
+          {paintings?.map(({ title, imageUrl }, idx) => (
             <div className="break-inside-avoid" key={title}>
-              <GalleryImage title={title} imageUrl={imageUrl} />
+              <GalleryImage title={title} imageUrl={imageUrl} index={idx} />
             </div>
           ))}
         </div>
