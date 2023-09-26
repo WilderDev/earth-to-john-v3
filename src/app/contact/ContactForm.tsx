@@ -29,7 +29,7 @@ export default function ContactForm() {
       formData.append(key, value);
     });
 
-    // carman.john@icloud.com
+    // info@earthtojohn.com
 
     const res = await fetch(
       `https://getform.io/f/${process.env.NEXT_PUBLIC_GET_FORM_ID}`,

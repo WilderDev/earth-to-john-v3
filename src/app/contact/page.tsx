@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <p className="mt-4 text-lg text-stone-500 sm:mt-3">
                   My hope is you are delighted with the artwork and excited to
                   hang it in your home or office. Please do not hesitate to
-                  contact me at carman.john@icloud.com.
+                  contact me at info@earthtojohn.com.
                 </p>
 
                 {/* Form */}

@@ -57,7 +57,7 @@ export const defaultMetadata: Metadata = {
     images,
     locale: 'en_US',
     countryName: 'United States',
-    emails: ['carman.john@icloud.com'],
+    emails: ['info@earthtojohn.com'],
     ttl: 60 * 60 * 24 * 7, // 1 week
   },
   icons: {
